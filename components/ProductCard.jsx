@@ -11,6 +11,7 @@ import { Button } from "./ui/button";
 import { Trash2, ChevronUp, ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { getPriceHistory } from "@/app/actions";
+import PriceChart from "./PriceChart";
 
 const ProductCard = ({ product }) => {
     const [showChart, setShowChart] = useState(false);
