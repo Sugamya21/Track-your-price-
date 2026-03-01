@@ -50,7 +50,10 @@ const ProductCard = ({ product }) => {
 
                     <div className="flex items-baseline gap-2">
                         <span className="text-3xl font-bold text-orange-500">
-                            {product.currency} {product.current_price}
+                            {new Intl.NumberFormat("en-IN", {
+                                style: "currency",
+                                currency: product.currency || "INR",
+                                }).format(product.current_price)}
                         </span>
 
                         <Badge variant="success" className="gap-1">

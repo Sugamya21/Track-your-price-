@@ -50,15 +50,6 @@ export default async function Home() {
         </div>
 
         {/*Auth buttons*/}
-        <Button
-        variant="default"
-        size="sm"
-        className="bg-orange-500 hover:bg-orange-600 gap-2"
-        >
-          <LogIn className="w-4 h-4" />
-          Sign in
-        </Button>
-
         <AuthButton user={user}/>
       </div>
     </header>
